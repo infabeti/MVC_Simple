@@ -22,4 +22,8 @@ public class ControladorPanelGeneros {
 		this.panelGeneros = new PanelGeneros(this);
 		this.vista.mostrarPanel(this.panelGeneros);
 	}
+	
+	public void accionadoBottonVolverPanelGeneros() {
+		this.controlador.navegarPanelBienvenida();
+	}
 }
