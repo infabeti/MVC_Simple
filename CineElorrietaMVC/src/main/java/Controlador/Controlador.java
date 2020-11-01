@@ -14,8 +14,8 @@ public class Controlador {
 		this.modelo = modelo;
 		this.vista = vista;
 		this.controladorPanelBienvenida = new ControladorPanelBienvenida(this.modelo, this.vista, this);
+		this.controladorPanelGeneros = new ControladorPanelGeneros(this.modelo, this.vista, this);
 		this.navegarPanelBienvenida();
-		//this.controladorPanelGeneros = new ControladorPanelGeneros(this.modelo, this.vista, this);
 	}
 	
 	public void navegarPanelBienvenida() {
@@ -23,7 +23,8 @@ public class Controlador {
 		this.controladorPanelBienvenida.mostrarPanelBienvenida();
 	}
 	
-	/*ControladorPanelBienvenida makeControladorBienvenida(Modelo modelo, Vista vista, Controlador controlador) {
-		return new ControladorPanelBienvenida(this.modelo, this.vista, this);
-	}*/
+	public void navegarPanelGeneros() {
+		System.out.println("Navegar panel Generos");
+		this.controladorPanelGeneros.mostrarPanelGeneros();
+	}
 }

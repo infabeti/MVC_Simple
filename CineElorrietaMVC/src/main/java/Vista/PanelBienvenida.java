@@ -38,7 +38,7 @@ public class PanelBienvenida extends JPanel{
 		return new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println("Ejecutando evento Boton Generos");
-				//controladorPanelBienvenida.accionadoBottonMostrarPanelGeneros();
+				controladorPanelBienvenida.accionadoBottonMostrarPanelGeneros();
 			}
 		};
 	}

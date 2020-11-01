@@ -22,4 +22,8 @@ public class ControladorPanelBienvenida {
 		this.panelBienvenida = new PanelBienvenida(this);
 		this.vista.mostrarPanel(this.panelBienvenida);
 	}
+	
+	public void accionadoBottonMostrarPanelGeneros() {
+		this.controlador.navegarPanelGeneros();
+	}
 }
